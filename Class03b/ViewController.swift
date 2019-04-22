@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var MessageA: UILabel!
+    
+    @IBAction func Click(_ sender: UIButton) {
+        MessageA.text = "Hi, Xcode"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
