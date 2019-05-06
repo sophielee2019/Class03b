@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="A">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="1bd-Gr-r2u" kind="show" id="IpX-9c-gAv"/>
@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="B">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="mxj-JY-dk3" kind="show" id="pYh-BU-lNQ"/>
@@ -84,14 +84,40 @@
             </objects>
             <point key="canvasLocation" x="-544.92753623188412" y="30.803571428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--My Web View Controller-->
         <scene sceneID="Zjs-gW-SnB">
             <objects>
-                <viewController id="1bd-Gr-r2u" sceneMemberID="viewController">
+                <viewController id="1bd-Gr-r2u" customClass="MyWebViewController" customModule="Class03b" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2U8-Or-LNv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-Ha-Myj">
+                                <rect key="frame" x="344" y="732" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="scp-b5-ufR"/>
+                                    <constraint firstAttribute="height" constant="30" id="zCa-7l-5Jo"/>
+                                </constraints>
+                                <state key="normal" title="GO"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjV-vn-GYj">
+                                <rect key="frame" x="20" y="732" width="316" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KfD-Sm-V8r"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rCD-Ha-Myj" firstAttribute="leading" secondItem="EjV-vn-GYj" secondAttribute="trailing" constant="8" id="8uX-Ar-gq9"/>
+                            <constraint firstItem="kgZ-UJ-kuq" firstAttribute="trailing" secondItem="rCD-Ha-Myj" secondAttribute="trailing" constant="20" id="cyr-WM-JGz"/>
+                            <constraint firstItem="kgZ-UJ-kuq" firstAttribute="bottom" secondItem="rCD-Ha-Myj" secondAttribute="bottom" constant="100" id="n3N-1o-yNC"/>
+                            <constraint firstItem="rCD-Ha-Myj" firstAttribute="centerY" secondItem="EjV-vn-GYj" secondAttribute="centerY" id="oa0-JY-kHl"/>
+                            <constraint firstItem="EjV-vn-GYj" firstAttribute="leading" secondItem="kgZ-UJ-kuq" secondAttribute="leading" constant="20" id="zFf-dM-APY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kgZ-UJ-kuq"/>
                     </view>
                 </viewController>
