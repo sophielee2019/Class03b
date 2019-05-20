@@ -13,7 +13,7 @@ class MyWebViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
     func receviedReponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
         print(responseString)
         
-        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com"))
+        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com")!)
     }
     
 
@@ -27,7 +27,7 @@ class MyWebViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         
         let worker : AsyncRequestWorker = AsyncRequestWorker()
         
-        worker.reponseDelegate = self as! AsyncReponseDelegate
+        worker.reponseDelegate = self
         worker.getResponse(from: "https://www.google.com", tag: 1)
         
         // myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
