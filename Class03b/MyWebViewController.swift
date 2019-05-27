@@ -39,6 +39,8 @@ class MyWebViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisAppear(notificaton:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(dataReceived(notification: )), name: NSNotification.Name(rawValue: "response.received"), object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,6 +49,8 @@ class MyWebViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, forKeyPath: NSNotification.Name(rawValue: "response.received").rawValue)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -92,6 +96,15 @@ class MyWebViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         
     self.btnGoBottomConstraint.constant = 44;    }
     
+    @objc func dataReceived(notification : NSNotification?) {
+        
+        guard let responseString = notification?.userInfo?["aaa"] as? String else {
+            return
+        }
+        
+        print(responseString)
+        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.goog.e.com")!)
+    }
     
     /*
     // MARK: - keyboard

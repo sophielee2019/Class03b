@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		342628E2FA5C87B1BE29066E /* Pods_Class03bUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4CD506B875771E03197045 /* Pods_Class03bUITests.framework */; };
 		DE270CEC4C051710008237F2 /* Pods_Class03bTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFC7F292F0330FE0F07A325 /* Pods_Class03bTests.framework */; };
+		E408CF48229B8913008F54EB /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E408CF47229B8913008F54EB /* FileWorker.swift */; };
+		E408CF84229B94B7008F54EB /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E408CF83229B94B7008F54EB /* ServiceCategoryContext.swift */; };
 		E435E0C822891F8E007A9F03 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E435E0C722891F8E007A9F03 /* WebKit.framework */; };
 		E496583E229254FF002BF08F /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E496583D229254FF002BF08F /* AsyncRequestWorker.swift */; };
 		E4B2ED72226D5F0100D8EC2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B2ED71226D5F0100D8EC2F /* AppDelegate.swift */; };
@@ -48,6 +50,8 @@
 		8A397AC6C4C97A86E677A7CC /* Pods_Class03b.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Class03b.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78680F2C65A00B3E4ECFBD7 /* Pods-Class03bTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class03bTests.release.xcconfig"; path = "Target Support Files/Pods-Class03bTests/Pods-Class03bTests.release.xcconfig"; sourceTree = "<group>"; };
 		D435DBA67ED4E461456BB2F4 /* Pods-Class03bUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class03bUITests.debug.xcconfig"; path = "Target Support Files/Pods-Class03bUITests/Pods-Class03bUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E408CF47229B8913008F54EB /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		E408CF83229B94B7008F54EB /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		E435E0C722891F8E007A9F03 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E496583D229254FF002BF08F /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 		E4B2ED6E226D5F0100D8EC2F /* Class03b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class03b.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +110,6 @@
 				D435DBA67ED4E461456BB2F4 /* Pods-Class03bUITests.debug.xcconfig */,
 				FCD430AFE2FC4CB233886734 /* Pods-Class03bUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +157,8 @@
 				E4B2ED7D226D5F0300D8EC2F /* Info.plist */,
 				E4FDFAC2227FDFAF005F7D83 /* MyWebViewController.swift */,
 				E496583D229254FF002BF08F /* AsyncRequestWorker.swift */,
+				E408CF47229B8913008F54EB /* FileWorker.swift */,
+				E408CF83229B94B7008F54EB /* ServiceCategoryContext.swift */,
 			);
 			path = Class03b;
 			sourceTree = "<group>";
@@ -382,12 +387,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Class03b/Pods-Class03b-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,8 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E496583E229254FF002BF08F /* AsyncRequestWorker.swift in Sources */,
+				E408CF84229B94B7008F54EB /* ServiceCategoryContext.swift in Sources */,
 				E4B2ED74226D5F0100D8EC2F /* ViewController.swift in Sources */,
 				E4FDFAC3227FDFAF005F7D83 /* MyWebViewController.swift in Sources */,
+				E408CF48229B8913008F54EB /* FileWorker.swift in Sources */,
 				E4B2ED72226D5F0100D8EC2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
