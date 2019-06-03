@@ -1,4 +1,4 @@
-/
+//
 //  SQLiteWorker.swift
 //  LeisureMap
 //
@@ -79,7 +79,7 @@ struct ServiceCategoryContext {
     }
     
     //
-    /*
+    
     func readData() -> [ServiceCategory] {
         
         var responseArray : [ServiceCategory] = []
@@ -99,7 +99,7 @@ struct ServiceCategoryContext {
         
         return responseArray
     }
- */
+ 
     
     //
     func updateData(serviceId: Int, old_name: String, new_name: String) {

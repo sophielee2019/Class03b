@@ -20,6 +20,10 @@
 		E4B2ED7C226D5F0300D8EC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B2ED7A226D5F0300D8EC2F /* LaunchScreen.storyboard */; };
 		E4B2ED87226D5F0300D8EC2F /* Class03bTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B2ED86226D5F0300D8EC2F /* Class03bTests.swift */; };
 		E4B2ED92226D5F0300D8EC2F /* Class03bUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B2ED91226D5F0300D8EC2F /* Class03bUITests.swift */; };
+		E4E3EDBE22A4ABC600668025 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3EDBD22A4ABC600668025 /* ServiceCategory.swift */; };
+		E4E3EDC022A4ACA500668025 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3EDBF22A4ACA500668025 /* Store.swift */; };
+		E4E3EDC222A4BA8500668025 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3EDC122A4BA8500668025 /* ImageViewController.swift */; };
+		E4E3EDC622A4CDD800668025 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E3EDC522A4CDD800668025 /* MyMapViewController.swift */; };
 		E4FDFAC3227FDFAF005F7D83 /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FDFAC2227FDFAF005F7D83 /* MyWebViewController.swift */; };
 		F40A8518950784F77E908F93 /* Pods_Class03b.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A397AC6C4C97A86E677A7CC /* Pods_Class03b.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +71,10 @@
 		E4B2ED8D226D5F0300D8EC2F /* Class03bUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class03bUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B2ED91226D5F0300D8EC2F /* Class03bUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class03bUITests.swift; sourceTree = "<group>"; };
 		E4B2ED93226D5F0300D8EC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E3EDBD22A4ABC600668025 /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
+		E4E3EDBF22A4ACA500668025 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E4E3EDC122A4BA8500668025 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E4E3EDC522A4CDD800668025 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		E4FDFAC2227FDFAF005F7D83 /* MyWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
 		FCD430AFE2FC4CB233886734 /* Pods-Class03bUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class03bUITests.release.xcconfig"; path = "Target Support Files/Pods-Class03bUITests/Pods-Class03bUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +167,10 @@
 				E496583D229254FF002BF08F /* AsyncRequestWorker.swift */,
 				E408CF47229B8913008F54EB /* FileWorker.swift */,
 				E408CF83229B94B7008F54EB /* ServiceCategoryContext.swift */,
+				E4E3EDBD22A4ABC600668025 /* ServiceCategory.swift */,
+				E4E3EDBF22A4ACA500668025 /* Store.swift */,
+				E4E3EDC122A4BA8500668025 /* ImageViewController.swift */,
+				E4E3EDC522A4CDD800668025 /* MyMapViewController.swift */,
 			);
 			path = Class03b;
 			sourceTree = "<group>";
@@ -409,8 +421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E3EDBE22A4ABC600668025 /* ServiceCategory.swift in Sources */,
+				E4E3EDC222A4BA8500668025 /* ImageViewController.swift in Sources */,
 				E496583E229254FF002BF08F /* AsyncRequestWorker.swift in Sources */,
+				E4E3EDC622A4CDD800668025 /* MyMapViewController.swift in Sources */,
 				E408CF84229B94B7008F54EB /* ServiceCategoryContext.swift in Sources */,
+				E4E3EDC022A4ACA500668025 /* Store.swift in Sources */,
 				E4B2ED74226D5F0100D8EC2F /* ViewController.swift in Sources */,
 				E4FDFAC3227FDFAF005F7D83 /* MyWebViewController.swift in Sources */,
 				E408CF48229B8913008F54EB /* FileWorker.swift in Sources */,
