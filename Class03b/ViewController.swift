@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var MessageA: UILabel!
     
-    @IBAction func btnMapClicked(_ sender: UIButton) {
+    // @IBOutlet weak var btnMapClicked: UIButton!
+    /*
+     @IBAction func btnMapClicked(_ sender: UIButton) {
         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
     }
+     */
     
     @IBAction func btnBClicked(_ sender: Any) {
         

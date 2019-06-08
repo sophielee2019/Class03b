@@ -17,8 +17,9 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     
     let regionRadius : CLLocationDistance = 10000
     
-    @IBOutlet weak var myMapView: MKMapView!
+    // @IBOutlet weak var myMapView: MKMapView!
     
+    @IBOutlet weak var myMapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         if ( CLLocationManager.locationServicesEnabled() ){
             locationManager.startUpdatingLocation()
         }
+        
         
         
         myMapView.delegate = self

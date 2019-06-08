@@ -62,7 +62,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="C"/>
                                 <connections>
-                                    <segue destination="Eeq-O2-qY3" kind="show" identifier="moveToMapSegue" id="VWl-nD-6bG"/>
+                                    <segue destination="Eeq-O2-qY3" kind="show" identifier="moveToMapSegue" id="tGf-vg-wmS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,6 +126,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bck-DW-4zK"/>
                     </view>
+                    <connections>
+                        <outlet property="myMapView" destination="Krs-KR-VIH" id="FQj-AW-7nK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oE6-e5-O3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
