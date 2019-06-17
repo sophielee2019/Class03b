@@ -12,15 +12,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var MessageA: UILabel!
     
     // @IBOutlet weak var btnMapClicked: UIButton!
+    
     /*
-     @IBAction func btnMapClicked(_ sender: UIButton) {
+    @IBAction func btnMapClicked(_ sender: UIButton) {
         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
     }
-     */
+ */
+ 
+    @IBAction func btnMapClicked(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
+        
+    }
+    
+    @IBAction func btnTableClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: "btnTableClick", sender: self)
+        
+    }
     
     @IBAction func btnBClicked(_ sender: Any) {
         
-        // performSegue(withIdentifier: "moveToImageSegue", sender: self)
+        // performSegue(withIdentifier: "btnTableClick", sender: self)
         
         let alert = UIAlertController(title: "資訊", message: "YN", preferredStyle: .alert)
         
@@ -36,9 +49,11 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
     @IBAction func Click(_ sender: UIButton) {
         MessageA.text = "Hi, Xcode"
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
