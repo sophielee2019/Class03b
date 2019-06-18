@@ -2,18 +2,26 @@
 //  DetailViewController.swift
 //  Class03b
 //
-//  Created by sophie on 2019/6/17.
+//  Created by sophie on 2019/6/18.
 //  Copyright © 2019 sophie. All rights reserved.
 //
 
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    var content : String?
+    
+    @IBOutlet weak var lbContent: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        lbContent.text = content
+        
     }
     
 
